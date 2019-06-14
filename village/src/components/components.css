@@ -1,7 +1,31 @@
-.Smurfs {
-
+.SmurfForm {
+    display: flex;
+    justify-content: center;
 }
 
+.SmurfForm form {
+    display: flex;
+    flex-flow: column nowrap;
+
+    width: 30%;
+}
+.SmurfForm input{
+    margin: 20px;
+    font-size: 1.3rem;
+    border: 1px solid #3399cc;
+    border-radius: 10px;
+    outline: none;
+    
+}
+
+.SmurfForm button{
+    position: relative;
+    left: 40px;
+    background: #3399cc;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    width: 75%
+}
 .Smurf {
     display: flex;
     justify-content: center;
