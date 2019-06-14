@@ -30,7 +30,8 @@ class App extends Component {
     axios
       .post('http://localhost:3333/smurfs', smurf)
       .then(res => {
-        this.setState({ smurfs: res.data })
+        this.setState({ smurfs: res.data });
+        this.props.history.push('/');
       })
       
       .catch(error => console.log(error));
@@ -40,10 +41,10 @@ class App extends Component {
   // Notice what your map function is looping over and returning inside of Smurfs.
   // You'll need to make sure you have the right properties on state and pass them down to props.
   render() {
-    console.log(this.state.smurfs)
+    console.log(this.props.history)
     return (
       <div className="App">
-                <div className="navLink">
+        <div className="navLink">
           <NavLink exact to='/'>Village</NavLink>
           <NavLink exact to='/smurf-form'>Add To Village</NavLink>
         </div>

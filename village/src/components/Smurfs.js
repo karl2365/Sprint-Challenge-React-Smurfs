@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {Link, NavLink} from 'react-router-dom';
 import Smurf from './Smurf';
+import "./components.css"
+
 
 class Smurfs extends Component {
   render() {
@@ -8,7 +10,7 @@ class Smurfs extends Component {
       <div className="Smurfs">
         <h1>Smurf Village</h1>
  
-        <ul>
+        <ul className=''>
           {this.props.smurfs.map(smurf => {
             return (
               <Smurf

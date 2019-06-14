@@ -1,0 +1,19 @@
+.Smurfs {
+
+}
+
+.Smurf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.smurfItem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 30%;
+    height: 50px;
+    text-align: left;
+    background: #cccccc;
+
+}
