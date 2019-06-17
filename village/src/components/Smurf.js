@@ -1,11 +1,12 @@
 import React from 'react';
+import "./components.css"
 
 const Smurf = props => {
   return (
     <div className="Smurf">
-      <h3>{props.name}</h3>
-      <strong>{props.height} tall</strong>
-      <p>{props.age} smurf years old</p>
+      <h3 className='smurfItem'>{props.name}</h3>
+      <strong className='smurfItem'>{props.height} tall</strong>
+      <p className='smurfItem'>{props.age} smurf years old</p>
     </div>
   );
 };

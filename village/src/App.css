@@ -1,3 +1,18 @@
 .App {
   text-align: center;
 }
+.navLink {
+  margin: 25px 0;
+
+}
+.navLink a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 0 15px;
+  color: black;
+  
+}
+.navLink a.active {
+  background: #cccccc;
+  color: blue;
+}
